@@ -57,9 +57,17 @@ public class AgentPanel extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+
+        hej.setBackground(new java.awt.Color(255, 255, 255));
+        hej.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        hej.setForeground(new java.awt.Color(255, 255, 255));
         hej.setText("jLabel1");
 
+        loggaUt.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        loggaUt.setForeground(new java.awt.Color(51, 51, 51));
         loggaUt.setText("Logga ut");
         loggaUt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,6 +75,8 @@ public class AgentPanel extends javax.swing.JFrame {
             }
         });
 
+        mittKonto.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        mittKonto.setForeground(new java.awt.Color(51, 51, 51));
         mittKonto.setText("Mitt konto");
         mittKonto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,6 +84,8 @@ public class AgentPanel extends javax.swing.JFrame {
             }
         });
 
+        hanteraAliens.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        hanteraAliens.setForeground(new java.awt.Color(51, 51, 51));
         hanteraAliens.setText("Aliens");
         hanteraAliens.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,6 +93,8 @@ public class AgentPanel extends javax.swing.JFrame {
             }
         });
 
+        registreraAlien.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        registreraAlien.setForeground(new java.awt.Color(51, 51, 51));
         registreraAlien.setText("Ny Alien");
         registreraAlien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,6 +102,8 @@ public class AgentPanel extends javax.swing.JFrame {
             }
         });
 
+        hanteraUtrustning.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        hanteraUtrustning.setForeground(new java.awt.Color(51, 51, 51));
         hanteraUtrustning.setText("Hantera Utrustning");
         hanteraUtrustning.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,6 +111,8 @@ public class AgentPanel extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("Statistik");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,7 +164,7 @@ public class AgentPanel extends javax.swing.JFrame {
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(loggaUt, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
