@@ -2,6 +2,8 @@
 package mib.projekt;
 
 import javax.swing.JOptionPane;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import oru.inf.InfDB;
 import oru.inf.InfException;
 
@@ -16,6 +18,7 @@ public class ÄndraLösenord extends javax.swing.JFrame {
         this.idb = idb;
         this.ID =ID;
         this.setLocationRelativeTo(null);
+        kontrolleraText();
         ÄndraLösenord.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
@@ -238,8 +241,36 @@ public class ÄndraLösenord extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
- 
+    private void kontrolleraText(){
+     
+     nyLösenord.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                kontrolleraLösenord();
+            }
 
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                kontrolleraLösenord();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                kontrolleraLösenord();
+            }
+        });
+     
+    }
+
+    private void kontrolleraLösenord(){
+     
+        char[] lösenordet = nyLösenord.getPassword();
+        if(lösenordet.length>6){
+            JOptionPane.showMessageDialog(null, "Lösenord får inte vara mer än 6 karaktärer!");
+        }
+     
+    }
+ 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel instruktion;
     private javax.swing.JLabel jLabel1;

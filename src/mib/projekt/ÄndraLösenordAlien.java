@@ -2,6 +2,8 @@
 package mib.projekt;
 
 import javax.swing.JOptionPane;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import oru.inf.InfDB;
 import oru.inf.InfException;
 
@@ -171,6 +173,36 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
         
     }//GEN-LAST:event_nyLösenordActionPerformed
 
+    private void kontrolleraText(){
+     
+     nyLösenord.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                kontrolleraLösenord();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                kontrolleraLösenord();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                kontrolleraLösenord();
+            }
+        });
+     
+    }
+
+    private void kontrolleraLösenord(){
+     
+        char[] lösenordet = nyLösenord.getPassword();
+            if(lösenordet.length>6){
+                JOptionPane.showMessageDialog(null, "Lösenord får inte vara mer än 6 karaktärer!");
+        }
+     
+    }
+    
     private void sparaÄndringarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaÄndringarActionPerformed
         
         try

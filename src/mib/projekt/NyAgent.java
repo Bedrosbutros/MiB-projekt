@@ -6,6 +6,8 @@ import javax.swing.JOptionPane;
 import oru.inf.InfDB;
 import oru.inf.InfException;
 import java.util.Date;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 public class NyAgent extends javax.swing.JFrame {
 
@@ -20,6 +22,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         this.idb=idb;
         this.ID=ID;
         fyllListor();
+        kontrollerText();
         NyAgent.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         agentID.setEnabled(false);
     }
@@ -55,6 +58,13 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         namn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        namn.addInputMethodListener(new java.awt.event.InputMethodListener() {
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+            }
+            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
+                namnInputMethodTextChanged(evt);
+            }
+        });
         namn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 namnActionPerformed(evt);
@@ -74,6 +84,11 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
         lösenord.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         lösenord.setText("jPasswordField1");
+        lösenord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lösenordActionPerformed(evt);
+            }
+        });
 
         administratör.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
@@ -129,7 +144,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
         jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("Agetn ID");
+        jLabel2.setText("Agent ID");
 
         jLabel3.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(51, 51, 51));
@@ -290,9 +305,97 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     
     
     private void namnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namnActionPerformed
-        // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_namnActionPerformed
 
+    private void kontrollerText(){
+        
+        namn.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                existerandeAgent();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                existerandeAgent();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                existerandeAgent();
+            }
+        });
+        
+        lösenord.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                långLösenord();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                långLösenord();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                långLösenord();
+            }
+        });
+        
+        telefon.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+        });
+        
+    }
+    
+    private void existerandeAgent(){
+        
+        try {
+            
+            String hämtaAgent = "select Namn from Agent";
+            ArrayList<String> agentNamn = idb.fetchColumn(hämtaAgent);
+            String fåNamn = namn.getText();
+            
+            if (agentNamn.contains(fåNamn)){
+                JOptionPane.showMessageDialog(null, "Agent med denna namn finns redan!");
+            }
+            
+            
+        } catch (InfException ettUndantag) {
+            JOptionPane.showMessageDialog(null, "Databasfel!");
+            System.out.println("Internt felmeddelande" + ettUndantag.getMessage());
+        }
+        
+        catch (Exception ettUndantag) {
+            JOptionPane.showMessageDialog(null, "Något gick fel!");
+            System.out.println("Internt felmeddelande" + ettUndantag.getMessage());
+        }
+        
+    }
+    
+    private void endastNummer(){
+        
+        if (telefon.getText().matches("[a-zA-Z]+")){
+            JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
+        }
+        
+    }
     
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
         
@@ -317,11 +420,14 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 
                 int resultat = JOptionPane.showConfirmDialog(null, "Är du nöjd med allt du har skrivit?", "Bekräfta uppgifter", JOptionPane.YES_NO_OPTION);
                 
-                if(resultat == JOptionPane.YES_OPTION)
-                {
-                    idb.insert(ändraInfo);
-                    JOptionPane.showMessageDialog(null, "Ny Agent är nu registrerat!");
-                    dispose();
+                if(resultat == JOptionPane.YES_OPTION){
+                    if (telefon.getText().matches("[a-zA-Z]+")){
+                        JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
+                    } else{
+                        idb.insert(ändraInfo);
+                        JOptionPane.showMessageDialog(null, "Ny Agent är nu registrerat!");
+                        dispose();
+                    }   
                 } else {
                     
                 }
@@ -359,6 +465,25 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         // TODO add your handling code here:
     }//GEN-LAST:event_agentIDActionPerformed
 
+    private void namnInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_namnInputMethodTextChanged
+        
+        
+    }//GEN-LAST:event_namnInputMethodTextChanged
+
+    private void lösenordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lösenordActionPerformed
+        
+        
+    }//GEN-LAST:event_lösenordActionPerformed
+
+    private void långLösenord(){
+        
+        char[] lösenordet = lösenord.getPassword();
+        if(lösenordet.length>6){
+            JOptionPane.showMessageDialog(null, "Lösenord får inte vara mer än 6 karaktärer!");
+        }
+        
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> administratör;
     private javax.swing.JTextField agentID;

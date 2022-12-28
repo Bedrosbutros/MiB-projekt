@@ -5,6 +5,8 @@ import oru.inf.InfDB;
 import oru.inf.InfException;
 import java.util.HashMap;
 import java.util.ArrayList;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 public class NyUtrustning extends javax.swing.JFrame {
 
@@ -17,6 +19,7 @@ public class NyUtrustning extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.ID = ID;
         fyllUtrustningsTyper();
+        kontrolleraText();
         NyUtrustning.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
@@ -51,6 +54,11 @@ public class NyUtrustning extends javax.swing.JFrame {
         namn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
         egenskap.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        egenskap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                egenskapActionPerformed(evt);
+            }
+        });
 
         utrustningsTyp.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         utrustningsTyp.addActionListener(new java.awt.event.ActionListener() {
@@ -237,7 +245,45 @@ public class NyUtrustning extends javax.swing.JFrame {
         
     }//GEN-LAST:event_utrustningsTypActionPerformed
 
+    private void egenskapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egenskapActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_egenskapActionPerformed
 
+    private void kontrolleraText(){
+        
+        egenskap.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                if (utrustningsTyp.getSelectedItem().toString().equals("Vapen")){
+                    endastNummer();
+                }
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                if (utrustningsTyp.getSelectedItem().toString().equals("Vapen")){
+                    endastNummer();
+                }
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                if (utrustningsTyp.getSelectedItem().toString().equals("Vapen")){
+                    endastNummer();
+                }
+            }
+        });
+        
+    }
+
+    private void endastNummer(){
+        
+        if (egenskap.getText().matches("[a-zA-Z]+")){
+            JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
+        }
+        
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField egenskap;
     private javax.swing.JLabel egenskapsNamn;

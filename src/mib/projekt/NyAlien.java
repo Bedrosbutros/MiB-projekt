@@ -6,6 +6,8 @@ import javax.swing.JOptionPane;
 import oru.inf.InfDB;
 import oru.inf.InfException;
 import java.util.Date;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 public class NyAlien extends javax.swing.JFrame {
 
@@ -22,6 +24,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         fyllListor();
         NyAlien.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         alienID.setEnabled(false);
+        kontrolleraText();
         
     }
 
@@ -314,6 +317,60 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         // TODO add your handling code here:
     }//GEN-LAST:event_namnActionPerformed
 
+    private void kontrolleraText(){
+        
+        telefon.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+        });
+        
+        lösenord.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                långLösenord();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                långLösenord();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                långLösenord();
+            }
+        });
+        
+    }
+    
+    private void endastNummer(){
+        
+        if (telefon.getText().matches("[a-zA-Z]+")){
+            JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
+        }
+        
+    }
+    
+    private void långLösenord(){
+        
+        char[] lösenordet = lösenord.getPassword();
+        if(lösenordet.length>6){
+            JOptionPane.showMessageDialog(null, "Lösenord får inte vara mer än 6 karaktärer!");
+        }
+        
+    }
     
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
 

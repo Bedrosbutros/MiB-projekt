@@ -7,6 +7,8 @@ import oru.inf.InfDB;
 import oru.inf.InfException;
 import java.util.Date;
 import java.util.HashMap;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 public class AgentAliens extends javax.swing.JFrame {
 
@@ -23,6 +25,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         spara.setEnabled(false);
         ändra.setVisible(false);
         fyllListor();
+        kontrolleraText();
         AgentAliens.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         
     }
@@ -747,6 +750,61 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     }//GEN-LAST:event_ändraActionPerformed
 
+    private void kontrolleraText(){
+        
+        telefon.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+        });
+        
+        lösenord.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                ändraLösenord();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                ändraLösenord();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                ändraLösenord();
+            }
+        });
+        
+    }
+    
+    private void endastNummer(){
+        
+        if (telefon.getText().matches("[a-zA-Z]+")){
+            JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
+        }
+        
+    }
+    
+    private void ändraLösenord(){
+        
+        char[] lösenordet = lösenord.getPassword();
+        if(lösenordet.length>6){
+            JOptionPane.showMessageDialog(null, "Lösenord får inte vara mer än 6 karaktärer!");
+        }
+        
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> agenter;
     private javax.swing.JComboBox<String> aliens;

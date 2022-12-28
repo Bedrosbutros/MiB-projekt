@@ -6,6 +6,8 @@ import javax.swing.JOptionPane;
 import oru.inf.InfDB;
 import oru.inf.InfException;
 import java.util.Date;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 public class MittKonto extends javax.swing.JFrame {
 
@@ -400,6 +402,7 @@ public class MittKonto extends javax.swing.JFrame {
 
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
 
+        
         int resultat = JOptionPane.showConfirmDialog(null, "Är du säker att du vill ändra?", "Bekräfta uppgifter", JOptionPane.YES_NO_OPTION);
 
         if(resultat == JOptionPane.YES_OPTION){
@@ -445,11 +448,12 @@ public class MittKonto extends javax.swing.JFrame {
     private void redigeraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_redigeraActionPerformed
 
         spara.setEnabled(true);
-        namn.setEnabled(true);
         telefon.setEnabled(true);
         område.setEnabled(true);
         datum.setEnabled(true);
         administratör.setEnabled(true);
+        kontrolleraText();
+        
     }//GEN-LAST:event_redigeraActionPerformed
 
     private void områdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_områdeActionPerformed
@@ -460,8 +464,34 @@ public class MittKonto extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_utrustningActionPerformed
 
-    
+    private void kontrolleraText(){
+        
+        telefon.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                endastNummer();
+            }
 
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                endastNummer();
+            }
+        });
+        
+    }
+
+    private void endastNummer(){
+        
+        if (telefon.getText().matches("[a-zA-Z]+")){
+            JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
+        }
+        
+    } 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> administratör;
