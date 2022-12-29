@@ -9,10 +9,10 @@ public class Meny extends javax.swing.JFrame {
     public Meny(InfDB idb) {
         initComponents();
         this.idb = idb;
-        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null); //Gör så att fönstret körs i mitten av skärmen
     }
 
-    @SuppressWarnings("unchecked")
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -118,14 +118,15 @@ public class Meny extends javax.swing.JFrame {
     private void agentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agentActionPerformed
 
         new Agent(idb).setVisible(true);
-        dispose();
+        dispose(); // Gör så att befintiliga fönstret stängs av
          
     }//GEN-LAST:event_agentActionPerformed
 
     private void alienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alienActionPerformed
-        // TODO add your handling code here:
+
         new Alien(idb).setVisible(true);
         dispose();
+        
     }//GEN-LAST:event_alienActionPerformed
 
   

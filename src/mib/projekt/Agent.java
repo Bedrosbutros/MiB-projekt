@@ -18,7 +18,6 @@ public class Agent extends javax.swing.JFrame {
     }
 
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -31,7 +30,7 @@ public class Agent extends javax.swing.JFrame {
         jRadioButton3 = new javax.swing.JRadioButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        byta = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
@@ -94,14 +93,14 @@ public class Agent extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mib/projekt/man-in-suit-and-tie (1).png"))); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(102, 102, 102));
-        jButton1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Byta");
-        jButton1.setBorderPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        byta.setBackground(new java.awt.Color(102, 102, 102));
+        byta.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        byta.setForeground(new java.awt.Color(255, 255, 255));
+        byta.setText("Byta");
+        byta.setBorderPainted(false);
+        byta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bytaActionPerformed(evt);
             }
         });
 
@@ -116,7 +115,7 @@ public class Agent extends javax.swing.JFrame {
                         .addComponent(jLabel3))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(87, 87, 87)
-                        .addComponent(jButton1)))
+                        .addComponent(byta)))
                 .addContainerGap(65, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -125,7 +124,7 @@ public class Agent extends javax.swing.JFrame {
                 .addGap(96, 96, 96)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(byta, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -259,18 +258,18 @@ public class Agent extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bytaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bytaActionPerformed
         
         new Meny(idb).setVisible(true);
         dispose();
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_bytaActionPerformed
 
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField agentID;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton byta;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;

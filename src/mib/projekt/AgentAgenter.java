@@ -14,7 +14,7 @@ public class AgentAgenter extends javax.swing.JFrame {
 private InfDB idb;
 private String ID;
 private boolean showingPassword = false;
-private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); //skapar en datumFormat
 
     public AgentAgenter(InfDB idb, String ID) {
         initComponents();
@@ -24,7 +24,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         spara.setEnabled(false);
         fyllListor();
         kontrolleraText();
-        AgentAgenter.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        AgentAgenter.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); //Gör så att fönstret 
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

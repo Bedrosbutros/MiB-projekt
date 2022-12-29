@@ -18,14 +18,13 @@ public class Alien extends javax.swing.JFrame {
         
     }
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        byta = new javax.swing.JButton();
         lblTest1 = new javax.swing.JLabel();
         alienID = new javax.swing.JTextField();
         lösenord = new javax.swing.JPasswordField();
@@ -44,14 +43,14 @@ public class Alien extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mib/projekt/alien-head.png"))); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(102, 102, 102));
-        jButton1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Byta");
-        jButton1.setBorderPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        byta.setBackground(new java.awt.Color(102, 102, 102));
+        byta.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        byta.setForeground(new java.awt.Color(255, 255, 255));
+        byta.setText("Byta");
+        byta.setBorderPainted(false);
+        byta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bytaActionPerformed(evt);
             }
         });
 
@@ -66,7 +65,7 @@ public class Alien extends javax.swing.JFrame {
                         .addComponent(jLabel3))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(87, 87, 87)
-                        .addComponent(jButton1)))
+                        .addComponent(byta)))
                 .addContainerGap(66, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -75,7 +74,7 @@ public class Alien extends javax.swing.JFrame {
                 .addGap(101, 101, 101)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(byta, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -244,19 +243,19 @@ public class Alien extends javax.swing.JFrame {
         
     }//GEN-LAST:event_loggaInActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bytaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bytaActionPerformed
         
         new Meny(idb).setVisible(true);
         dispose();
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_bytaActionPerformed
 
      
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField alienID;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton byta;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;

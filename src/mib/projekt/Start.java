@@ -16,7 +16,7 @@ public class Start {
             Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-                new Meny(idb).setVisible(true);
+                new Meny(idb).setVisible(true); // Här öppnas en ny Meny
             }
     
     
