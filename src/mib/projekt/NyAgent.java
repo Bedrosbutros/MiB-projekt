@@ -287,9 +287,8 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             administratör.addItem("Nej");
             administratör.addItem("Ja");
             
-            int nyAgentID = Integer.parseInt(idb.fetchSingle(bestämmID));
-            nyAgentID = nyAgentID +1;
-            agentID.setText(Integer.toString(nyAgentID));
+            String nyAgentID = idb.getAutoIncrement("Agent", "Agent_ID");
+            agentID.setText(nyAgentID);
             
         } catch (InfException ettUndantag) {
             JOptionPane.showMessageDialog(null, "Databasfel!");
@@ -331,34 +330,34 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         lösenord.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                långLösenord();
+                Validering.lösenordetÄrLång(lösenord);
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-                långLösenord();
+                Validering.lösenordetÄrLång(lösenord);
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                långLösenord();
+                Validering.lösenordetÄrLång(lösenord);
             }
         });
         
         telefon.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                endastNummer();
+                Validering.endastNummerTillåten(telefon);
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-                endastNummer();
+                Validering.endastNummerTillåten(telefon);
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                endastNummer();
+                Validering.endastNummerTillåten(telefon);
             }
         });
         
@@ -389,13 +388,6 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     }
     
-    private void endastNummer(){
-        
-        if (telefon.getText().matches("[a-zA-Z]+")){
-            JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
-        }
-        
-    }
     
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
         
@@ -475,14 +467,6 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     }//GEN-LAST:event_lösenordActionPerformed
 
-    private void långLösenord(){
-        
-        char[] lösenordet = lösenord.getPassword();
-        if(lösenordet.length>6){
-            JOptionPane.showMessageDialog(null, "Lösenord får inte vara mer än 6 karaktärer!");
-        }
-        
-    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> administratör;

@@ -296,9 +296,8 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 agenter.addItem(agent);
             }
             
-            int nyAlienID = Integer.parseInt(idb.fetchSingle(bestämmID));
-            nyAlienID = nyAlienID +1;
-            alienID.setText(Integer.toString(nyAlienID));
+            String nyAlienID = idb.getAutoIncrement("Alien", "Alien_ID");
+            alienID.setText(nyAlienID);
             
         } catch (InfException ettUndantag) {
             JOptionPane.showMessageDialog(null, "Databasfel!");

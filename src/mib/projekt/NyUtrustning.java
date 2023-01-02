@@ -3,8 +3,6 @@ package mib.projekt;
 import javax.swing.JOptionPane;
 import oru.inf.InfDB;
 import oru.inf.InfException;
-import java.util.HashMap;
-import java.util.ArrayList;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
@@ -255,34 +253,27 @@ public class NyUtrustning extends javax.swing.JFrame {
             @Override
             public void insertUpdate(DocumentEvent e) {
                 if (utrustningsTyp.getSelectedItem().toString().equals("Vapen")){
-                    endastNummer();
+                    Validering.endastNummerTillåten(egenskap);
                 }
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
                 if (utrustningsTyp.getSelectedItem().toString().equals("Vapen")){
-                    endastNummer();
+                    Validering.endastNummerTillåten(egenskap);
                 }
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
                 if (utrustningsTyp.getSelectedItem().toString().equals("Vapen")){
-                    endastNummer();
+                    Validering.endastNummerTillåten(egenskap);
                 }
             }
         });
         
     }
 
-    private void endastNummer(){
-        
-        if (egenskap.getText().matches("[a-zA-Z]+")){
-            JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
-        }
-        
-    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField egenskap;

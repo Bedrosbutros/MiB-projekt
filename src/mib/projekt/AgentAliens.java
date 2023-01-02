@@ -133,6 +133,11 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         });
 
         ras.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        ras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rasActionPerformed(evt);
+            }
+        });
 
         ändra.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         ändra.setForeground(new java.awt.Color(51, 51, 51));
@@ -750,60 +755,48 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     }//GEN-LAST:event_ändraActionPerformed
 
+    private void rasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rasActionPerformed
+
     private void kontrolleraText(){
         
         telefon.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                endastNummer();
+                Validering.endastNummerTillåten(telefon);
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-                endastNummer();
+                Validering.endastNummerTillåten(telefon);
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                endastNummer();
+                Validering.endastNummerTillåten(telefon);
             }
         });
         
         lösenord.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                ändraLösenord();
+                Validering.lösenordetÄrLång(lösenord);
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-                ändraLösenord();
+                Validering.lösenordetÄrLång(lösenord);
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                ändraLösenord();
+                Validering.lösenordetÄrLång(lösenord);
             }
         });
         
     }
     
-    private void endastNummer(){
-        
-        if (telefon.getText().matches("[a-zA-Z]+")){
-            JOptionPane.showMessageDialog(null, "Endast siffror tillåtna!");
-        }
-        
-    }
-    
-    private void ändraLösenord(){
-        
-        char[] lösenordet = lösenord.getPassword();
-        if(lösenordet.length>6){
-            JOptionPane.showMessageDialog(null, "Lösenord får inte vara mer än 6 karaktärer!");
-        }
-        
-    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> agenter;
