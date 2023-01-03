@@ -66,7 +66,7 @@ public class NyUtrustning extends javax.swing.JFrame {
         });
 
         egenskapsNamn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        egenskapsNamn.setText("A");
+        egenskapsNamn.setText("Egenskap");
 
         spara.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         spara.setText("Spara");
@@ -172,6 +172,9 @@ public class NyUtrustning extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
+
+    if (Validering.rutanÄrTom(egenskap, egenskapsNamn)){
+    if (Validering.rutanÄrTom(namn, jLabel2)){
         
         try
         {
@@ -222,7 +225,8 @@ public class NyUtrustning extends javax.swing.JFrame {
             System.out.println("Internt felmeddelande" + ettUndantag.getMessage());
             
         }
-        
+    } 
+    }
     }//GEN-LAST:event_sparaActionPerformed
 
     private void utrustningsTypActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_utrustningsTypActionPerformed

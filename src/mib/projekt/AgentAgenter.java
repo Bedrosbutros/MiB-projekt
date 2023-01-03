@@ -442,8 +442,16 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); //skap
 
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
         
+    if (Validering.rutanÄrTom(namn, jLabel3)){
+    if (Validering.rutanÄrTom(telefon, jLabel4)){    
+    if (Validering.rutanÄrTom(lösenord, jLabel6)){
+    if (Validering.endastNummerTillåten(telefon)){    
+    if (Validering.lösenordetÄrLång(lösenord)){
+        
     int resultat = JOptionPane.showConfirmDialog(null, "Är du nöjd med allt du har skrivit?", "Bekräfta uppgifter", JOptionPane.YES_NO_OPTION);
 
+    
+    
     if(resultat == JOptionPane.YES_OPTION){
         
         try {
@@ -483,7 +491,11 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); //skap
     } else {
                     
     }
-        
+    }
+    }
+    }
+    }
+    }
         
     }//GEN-LAST:event_sparaActionPerformed
 

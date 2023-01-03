@@ -618,6 +618,13 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
         
+    if (Validering.endastNummerTillåten(telefon)){
+    if (Validering.lösenordetÄrLång(lösenord)){    
+    if (Validering.rutanÄrTom(namn, jLabel2)){
+    if (Validering.rutanÄrTom(telefon, jLabel3)){ 
+    if (Validering.rutanÄrTom(lösenord, jLabel5)){
+    
+       
     int resultat = JOptionPane.showConfirmDialog(null, "Är du nöjd med allt du har skrivit?", "Bekräfta uppgifter", JOptionPane.YES_NO_OPTION);
     
     if(resultat == JOptionPane.YES_OPTION){
@@ -652,7 +659,12 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     } else {
                     
     }
-        
+    }
+    }
+    }
+    }
+    }
+    
     }//GEN-LAST:event_sparaActionPerformed
 
     private void döljaLösenordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_döljaLösenordActionPerformed

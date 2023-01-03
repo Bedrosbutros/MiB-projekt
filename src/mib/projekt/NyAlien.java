@@ -372,7 +372,12 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     }
     
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
-
+        
+    if (Validering.endastNummerTillåten(telefon)){
+    if (Validering.lösenordetÄrLång(lösenord)){
+    if (Validering.rutanÄrTom(namn, jLabel3)){    
+    if (Validering.rutanÄrTom(telefon, jLabel4)){   
+    if (Validering.rutanÄrTom(lösenord, jLabel6)){    
     
         try {
             
@@ -418,7 +423,11 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             System.out.println("Internt felmeddelande" + ettUndantag.getMessage());
         }
         
-        
+    }
+    }
+    }
+    }
+    }
     }//GEN-LAST:event_sparaActionPerformed
 
     private void döljaLösenordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_döljaLösenordActionPerformed

@@ -402,6 +402,9 @@ public class MittKonto extends javax.swing.JFrame {
 
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
 
+        if (Validering.endastNummerTillåten(telefon)){
+        if (Validering.rutanÄrTom(namn, jLabel1)){
+        if (Validering.rutanÄrTom(telefon, jLabel2)){    
         
         int resultat = JOptionPane.showConfirmDialog(null, "Är du säker att du vill ändra?", "Bekräfta uppgifter", JOptionPane.YES_NO_OPTION);
 
@@ -443,6 +446,10 @@ public class MittKonto extends javax.swing.JFrame {
 
             }
         }
+        
+    }
+    }
+    }
     }//GEN-LAST:event_sparaActionPerformed
 
     private void redigeraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_redigeraActionPerformed
