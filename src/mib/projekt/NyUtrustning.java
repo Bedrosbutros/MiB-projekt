@@ -251,6 +251,8 @@ public class NyUtrustning extends javax.swing.JFrame {
        
     }//GEN-LAST:event_egenskapActionPerformed
 
+    // Gör så att texten i rutorna konstant kontrolleras och returnar fel ifall valideringsklassen triggas.
+    
     private void kontrolleraText(){
         
         egenskap.getDocument().addDocumentListener(new DocumentListener() {

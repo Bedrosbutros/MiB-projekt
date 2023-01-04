@@ -769,6 +769,8 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     }//GEN-LAST:event_rasActionPerformed
 
+    // Gör så att texten i rutorna konstant kontrolleras och returnar fel ifall valideringsklassen triggas.
+    
     private void kontrolleraText(){
         
         telefon.getDocument().addDocumentListener(new DocumentListener() {

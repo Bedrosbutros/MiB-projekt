@@ -462,13 +462,15 @@ public class MittKonto extends javax.swing.JFrame {
     }//GEN-LAST:event_redigeraActionPerformed
 
     private void områdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_områdeActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_områdeActionPerformed
 
     private void utrustningActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_utrustningActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_utrustningActionPerformed
 
+    // Gör så att texten i rutorna konstant kontrolleras och returnar fel ifall valideringsklassen triggas.
+    
     private void kontrolleraText(){
         
         telefon.getDocument().addDocumentListener(new DocumentListener() {

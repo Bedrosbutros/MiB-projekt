@@ -355,7 +355,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); //skap
     
     
     private void namnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namnActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_namnActionPerformed
 
     private void hämtaDatum()

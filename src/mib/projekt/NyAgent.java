@@ -307,6 +307,8 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     }//GEN-LAST:event_namnActionPerformed
 
+    // Gör så att texten i rutorna konstant kontrolleras och returnar fel ifall valideringsklassen triggas.
+    
     private void kontrollerText(){
         
         namn.getDocument().addDocumentListener(new DocumentListener() {
