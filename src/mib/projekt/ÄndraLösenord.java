@@ -17,9 +17,9 @@ public class ÄndraLösenord extends javax.swing.JFrame {
         initComponents();
         this.idb = idb;
         this.ID =ID;
-        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null); //Gör så att fönstret körs i mitten av skärmen
         kontrolleraText();
-        ÄndraLösenord.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        ÄndraLösenord.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); //Gör så att programmet inte stänger helt när man trycker på X
     }
 
 

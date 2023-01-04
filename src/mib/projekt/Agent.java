@@ -14,7 +14,7 @@ public class Agent extends javax.swing.JFrame {
     {
         initComponents();
         this.idb = idb;
-        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null); //Gör så att fönstret körs i mitten av skärmen
     }
 
 

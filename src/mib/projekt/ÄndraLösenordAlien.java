@@ -17,8 +17,8 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
         initComponents();
         this.idb = idb;
         this.ID =ID;
-        this.setLocationRelativeTo(null);
-        ÄndraLösenordAlien.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        this.setLocationRelativeTo(null); //Gör så att fönstret körs i mitten av skärmen
+        ÄndraLösenordAlien.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); //Gör så att programmet inte stänger helt när man trycker på X
     }
 
 

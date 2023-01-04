@@ -18,13 +18,13 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); //skap
 
     public AgentAgenter(InfDB idb, String ID) {
         initComponents();
-        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null); //Gör så att fönstret körs i mitten av skärmen
         this.idb=idb;
         this.ID=ID;
         spara.setEnabled(false);
         fyllListor();
         kontrolleraText();
-        AgentAgenter.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); //Gör så att fönstret 
+        AgentAgenter.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); //Gör så att programmet inte stänger helt när man trycker på X
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

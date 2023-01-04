@@ -19,14 +19,13 @@ public class MittKonto extends javax.swing.JFrame {
         initComponents();
         this.idb = idb;
         this.ID =ID;
-        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null); //Gör så att fönstret körs i mitten av skärmen
         start();
         fyllAdminStatus();
         hämtaInfo();
         fyllOmråden();
         fyllUtrustning();
-        
-        MittKonto.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        MittKonto.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); //Gör så att programmet inte stänger helt när man trycker på X
     }
 
     private void start()

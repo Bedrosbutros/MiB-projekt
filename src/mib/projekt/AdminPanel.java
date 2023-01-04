@@ -1,5 +1,6 @@
 
 package mib.projekt;
+
 import javax.swing.JOptionPane;
 import oru.inf.InfDB;
 import oru.inf.InfException;
@@ -14,12 +15,12 @@ public class AdminPanel extends javax.swing.JFrame {
         initComponents();
         this.idb = idb;
         this.ID =ID;
-        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null); //Gör så att fönstret körs i mitten av skärmen
         hej();
     }
     
-    private void hej()
-    {
+    private void hej(){
+        
         try
         {
             
@@ -235,8 +236,7 @@ public class AdminPanel extends javax.swing.JFrame {
         dispose();
 
     }//GEN-LAST:event_loggaUtActionPerformed
-
-    
+  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton hanteraAgenter;

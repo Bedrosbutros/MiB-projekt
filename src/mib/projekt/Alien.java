@@ -14,7 +14,7 @@ public class Alien extends javax.swing.JFrame {
     public Alien(InfDB idb) {
         initComponents();
         this.idb = idb;
-        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null); //Gör så att fönstret körs i mitten av skärmen
         
     }
 
@@ -204,11 +204,11 @@ public class Alien extends javax.swing.JFrame {
     }//GEN-LAST:event_döljKnappActionPerformed
 
     private void alienIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alienIDActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_alienIDActionPerformed
 
     private void lösenordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lösenordActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_lösenordActionPerformed
 
     private void loggaInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loggaInActionPerformed
