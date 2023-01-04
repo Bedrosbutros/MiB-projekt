@@ -38,9 +38,9 @@ public class NyUtrustning extends javax.swing.JFrame {
         utrustningsTyp = new javax.swing.JComboBox<>();
         egenskapsNamn = new javax.swing.JLabel();
         spara = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        textUtrustningstyp = new javax.swing.JLabel();
+        textUtrustningsnamn = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -76,14 +76,14 @@ public class NyUtrustning extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel1.setText("Utrustningstyp");
+        textUtrustningstyp.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textUtrustningstyp.setText("Utrustningstyp");
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setText("Utrustningsnamn");
+        textUtrustningsnamn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textUtrustningsnamn.setText("Utrustningsnamn");
 
-        jLabel3.setFont(new java.awt.Font("Futura", 0, 24)); // NOI18N
-        jLabel3.setText("Registrera ny utrustning");
+        titel.setFont(new java.awt.Font("Futura", 0, 24)); // NOI18N
+        titel.setText("Registrera ny utrustning");
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -118,8 +118,8 @@ public class NyUtrustning extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel1)
+                                    .addComponent(textUtrustningsnamn)
+                                    .addComponent(textUtrustningstyp)
                                     .addComponent(egenskapsNamn, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(namn)
@@ -127,7 +127,7 @@ public class NyUtrustning extends javax.swing.JFrame {
                                         .addComponent(utrustningsTyp, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(52, 52, 52))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
+                                .addComponent(titel)
                                 .addGap(19, 19, 19))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(111, 111, 111)
@@ -138,13 +138,13 @@ public class NyUtrustning extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(33, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addComponent(titel)
                 .addGap(31, 31, 31)
-                .addComponent(jLabel2)
+                .addComponent(textUtrustningsnamn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(namn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(textUtrustningstyp)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(utrustningsTyp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -174,7 +174,7 @@ public class NyUtrustning extends javax.swing.JFrame {
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
 
     if (Validering.rutanÄrTom(egenskap, egenskapsNamn)){
-    if (Validering.rutanÄrTom(namn, jLabel2)){
+    if (Validering.rutanÄrTom(namn, textUtrustningsnamn)){
         
         try
         {
@@ -224,9 +224,9 @@ public class NyUtrustning extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Något gick fel!");
             System.out.println("Internt felmeddelande" + ettUndantag.getMessage());
             
+                }
+            } 
         }
-    } 
-    }
     }//GEN-LAST:event_sparaActionPerformed
 
     private void utrustningsTypActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_utrustningsTypActionPerformed
@@ -248,7 +248,7 @@ public class NyUtrustning extends javax.swing.JFrame {
     }//GEN-LAST:event_utrustningsTypActionPerformed
 
     private void egenskapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egenskapActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_egenskapActionPerformed
 
     private void kontrolleraText(){
@@ -282,14 +282,14 @@ public class NyUtrustning extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField egenskap;
     private javax.swing.JLabel egenskapsNamn;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField namn;
     private javax.swing.JButton spara;
+    private javax.swing.JLabel textUtrustningsnamn;
+    private javax.swing.JLabel textUtrustningstyp;
+    private javax.swing.JLabel titel;
     private javax.swing.JComboBox<String> utrustningsTyp;
     // End of variables declaration//GEN-END:variables
 }

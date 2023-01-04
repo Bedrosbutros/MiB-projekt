@@ -34,7 +34,7 @@ public class AlienStatistik extends javax.swing.JFrame {
         förstaDatum = new com.toedter.calendar.JDateChooser();
         andraDatum = new com.toedter.calendar.JDateChooser();
         ok = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -80,9 +80,9 @@ public class AlienStatistik extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("Statistik");
+        titel.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
+        titel.setForeground(new java.awt.Color(51, 51, 51));
+        titel.setText("Statistik");
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -125,18 +125,17 @@ public class AlienStatistik extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(ok, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(56, 56, 56)))
-                        .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(19, 19, 19))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(titel)
                         .addGap(118, 118, 118))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(jLabel1)
+                .addComponent(titel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -254,8 +253,7 @@ public class AlienStatistik extends javax.swing.JFrame {
         
     }//GEN-LAST:event_okActionPerformed
 
-    private void hämtaEfterRas()
-    {
+    private void hämtaEfterRas(){
         
         try {
             
@@ -336,7 +334,6 @@ public class AlienStatistik extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser andraDatum;
     private com.toedter.calendar.JDateChooser förstaDatum;
     private javax.swing.JLabel info;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -345,5 +342,6 @@ public class AlienStatistik extends javax.swing.JFrame {
     private javax.swing.JButton ok;
     private javax.swing.JComboBox<String> rasPlats;
     private javax.swing.JComboBox<String> sorteraEfter;
+    private javax.swing.JLabel titel;
     // End of variables declaration//GEN-END:variables
 }

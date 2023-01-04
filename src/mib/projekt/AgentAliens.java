@@ -41,7 +41,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         område = new javax.swing.JComboBox<>();
         agenter = new javax.swing.JComboBox<>();
         aliens = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
         redigera = new javax.swing.JButton();
         spara = new javax.swing.JButton();
         döljaLösenord = new javax.swing.JRadioButton();
@@ -51,14 +51,14 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         jPanel2 = new javax.swing.JPanel();
         statistik = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        textNamn = new javax.swing.JLabel();
+        textTelefon = new javax.swing.JLabel();
+        textRegistreringsdatum = new javax.swing.JLabel();
+        textLösenord = new javax.swing.JLabel();
+        textOmråde = new javax.swing.JLabel();
+        textAgent = new javax.swing.JLabel();
+        textRas = new javax.swing.JLabel();
+        textValdAlien = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -93,9 +93,9 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("Registrerade Aliens");
+        titel.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
+        titel.setForeground(new java.awt.Color(51, 51, 51));
+        titel.setText("Registrerade Aliens");
 
         redigera.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         redigera.setForeground(new java.awt.Color(51, 51, 51));
@@ -185,37 +185,37 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 .addGap(74, 74, 74))
         );
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("Namn");
+        textNamn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textNamn.setForeground(new java.awt.Color(51, 51, 51));
+        textNamn.setText("Namn");
 
-        jLabel3.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("Telefon");
+        textTelefon.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textTelefon.setForeground(new java.awt.Color(51, 51, 51));
+        textTelefon.setText("Telefon");
 
-        jLabel4.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("Registreringsdatum");
+        textRegistreringsdatum.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textRegistreringsdatum.setForeground(new java.awt.Color(51, 51, 51));
+        textRegistreringsdatum.setText("Registreringsdatum");
 
-        jLabel5.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel5.setText("Lösenord");
+        textLösenord.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textLösenord.setForeground(new java.awt.Color(51, 51, 51));
+        textLösenord.setText("Lösenord");
 
-        jLabel6.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Område");
+        textOmråde.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textOmråde.setForeground(new java.awt.Color(51, 51, 51));
+        textOmråde.setText("Område");
 
-        jLabel7.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel7.setText("Agent");
+        textAgent.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textAgent.setForeground(new java.awt.Color(51, 51, 51));
+        textAgent.setText("Agent");
 
-        jLabel8.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel8.setText("Ras");
+        textRas.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textRas.setForeground(new java.awt.Color(51, 51, 51));
+        textRas.setText("Ras");
 
-        jLabel9.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel9.setText("Vald Alien");
+        textValdAlien.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textValdAlien.setForeground(new java.awt.Color(51, 51, 51));
+        textValdAlien.setText("Vald Alien");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -226,7 +226,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 58, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
+                        .addComponent(titel)
                         .addGap(73, 73, 73))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -235,20 +235,20 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jLabel3)
-                                            .addComponent(jLabel7)
-                                            .addComponent(jLabel6)
-                                            .addComponent(jLabel8)
-                                            .addComponent(jLabel5))
+                                            .addComponent(textNamn)
+                                            .addComponent(textTelefon)
+                                            .addComponent(textAgent)
+                                            .addComponent(textOmråde)
+                                            .addComponent(textRas)
+                                            .addComponent(textLösenord))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(döljaLösenord, javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(ändra, javax.swing.GroupLayout.Alignment.TRAILING)))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel4)
-                                            .addComponent(jLabel9))
+                                            .addComponent(textRegistreringsdatum)
+                                            .addComponent(textValdAlien))
                                         .addGap(0, 0, Short.MAX_VALUE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -273,42 +273,42 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
-                .addComponent(jLabel1)
+                .addComponent(titel)
                 .addGap(60, 60, 60)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(aliens, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
+                    .addComponent(textValdAlien))
                 .addGap(57, 57, 57)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(namn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
+                            .addComponent(textNamn))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(telefon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
+                            .addComponent(textTelefon))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(datum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(textRegistreringsdatum, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(döljaLösenord, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lösenord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textLösenord, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(område, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
+                    .addComponent(textOmråde))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(agenter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
+                    .addComponent(textAgent))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(ändra)
-                        .addComponent(jLabel8))
+                        .addComponent(textRas))
                     .addComponent(ras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(49, 49, 49)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -363,8 +363,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     }
     
     
-    private void fyllListor()
-    {
+    private void fyllListor(){
         
         String hämtaNamn = "SELECT Namn from Alien";
         String hämtaPlats = "Select Benamning from Plats";
@@ -411,11 +410,11 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     
     
     private void namnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namnActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_namnActionPerformed
 
-    private void hämtaRas()
-    {
+    private void hämtaRas(){
+        
         String hittaID = "Select Alien_ID from Alien where Namn='"+aliens.getSelectedItem().toString()+"'";
         
         try {
@@ -462,8 +461,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         }
     }
     
-    private void hämtaDatum()
-    {
+    private void hämtaDatum(){
         
         try {
             
@@ -576,8 +574,8 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         }
     }
     
-    private void ändraTillWorm()
-    {
+    private void ändraTillWorm(){
+        
         String hittaID = "Select Alien_ID from Alien where Namn='"+aliens.getSelectedItem().toString()+"'";
         
         try {
@@ -620,9 +618,9 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     if (Validering.endastNummerTillåten(telefon)){
     if (Validering.lösenordetÄrLång(lösenord)){    
-    if (Validering.rutanÄrTom(namn, jLabel2)){
-    if (Validering.rutanÄrTom(telefon, jLabel3)){ 
-    if (Validering.rutanÄrTom(lösenord, jLabel5)){
+    if (Validering.rutanÄrTom(namn, textNamn)){
+    if (Validering.rutanÄrTom(telefon, textTelefon)){ 
+    if (Validering.rutanÄrTom(lösenord, textLösenord)){
     
        
     int resultat = JOptionPane.showConfirmDialog(null, "Är du nöjd med allt du har skrivit?", "Bekräfta uppgifter", JOptionPane.YES_NO_OPTION);
@@ -658,12 +656,12 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     } else {
                     
-    }
-    }
-    }
-    }
-    }
-    }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     
     }//GEN-LAST:event_sparaActionPerformed
 
@@ -722,7 +720,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     }//GEN-LAST:event_taBortActionPerformed
 
     private void områdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_områdeActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_områdeActionPerformed
 
     private void statistikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statistikActionPerformed
@@ -768,7 +766,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     }//GEN-LAST:event_ändraActionPerformed
 
     private void rasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rasActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_rasActionPerformed
 
     private void kontrolleraText(){
@@ -815,16 +813,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private javax.swing.JComboBox<String> aliens;
     private com.toedter.calendar.JDateChooser datum;
     private javax.swing.JRadioButton döljaLösenord;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField lösenord;
@@ -836,6 +825,15 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private javax.swing.JButton statistik;
     private javax.swing.JButton taBort;
     private javax.swing.JTextField telefon;
+    private javax.swing.JLabel textAgent;
+    private javax.swing.JLabel textLösenord;
+    private javax.swing.JLabel textNamn;
+    private javax.swing.JLabel textOmråde;
+    private javax.swing.JLabel textRas;
+    private javax.swing.JLabel textRegistreringsdatum;
+    private javax.swing.JLabel textTelefon;
+    private javax.swing.JLabel textValdAlien;
+    private javax.swing.JLabel titel;
     private javax.swing.JButton ändra;
     // End of variables declaration//GEN-END:variables
 }

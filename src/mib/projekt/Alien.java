@@ -25,13 +25,13 @@ public class Alien extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         byta = new javax.swing.JButton();
-        lblTest1 = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
         alienID = new javax.swing.JTextField();
         lösenord = new javax.swing.JPasswordField();
         loggaIn = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jRadioButton = new javax.swing.JRadioButton();
+        textAnvändarnamn = new javax.swing.JLabel();
+        textLösenord = new javax.swing.JLabel();
+        döljKnapp = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -78,10 +78,10 @@ public class Alien extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        lblTest1.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
-        lblTest1.setForeground(new java.awt.Color(51, 51, 51));
-        lblTest1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTest1.setText("Logga in!");
+        titel.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
+        titel.setForeground(new java.awt.Color(51, 51, 51));
+        titel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        titel.setText("Logga in!");
 
         alienID.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         alienID.setForeground(new java.awt.Color(153, 153, 153));
@@ -112,17 +112,17 @@ public class Alien extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Futura", 0, 13)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("Användarnamn");
+        textAnvändarnamn.setFont(new java.awt.Font("Futura", 0, 13)); // NOI18N
+        textAnvändarnamn.setForeground(new java.awt.Color(51, 51, 51));
+        textAnvändarnamn.setText("Användarnamn");
 
-        jLabel6.setFont(new java.awt.Font("Futura", 0, 13)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Lösenord");
+        textLösenord.setFont(new java.awt.Font("Futura", 0, 13)); // NOI18N
+        textLösenord.setForeground(new java.awt.Color(51, 51, 51));
+        textLösenord.setText("Lösenord");
 
-        jRadioButton.addActionListener(new java.awt.event.ActionListener() {
+        döljKnapp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonActionPerformed(evt);
+                döljKnappActionPerformed(evt);
             }
         });
 
@@ -136,15 +136,15 @@ public class Alien extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(76, 76, 76)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
+                            .addComponent(textAnvändarnamn)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(lblTest1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(titel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(lösenord)
                                     .addComponent(alienID, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jRadioButton))
-                            .addComponent(jLabel6)))
+                                .addComponent(döljKnapp))
+                            .addComponent(textLösenord)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(107, 107, 107)
                         .addComponent(loggaIn, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -154,13 +154,13 @@ public class Alien extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addComponent(lblTest1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(titel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24)
-                .addComponent(jLabel4)
+                .addComponent(textAnvändarnamn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(alienID, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel6)
+                .addComponent(textLösenord)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -170,7 +170,7 @@ public class Alien extends javax.swing.JFrame {
                         .addGap(33, 33, 33))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
-                        .addComponent(jRadioButton)
+                        .addComponent(döljKnapp)
                         .addGap(101, 101, 101))))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -189,7 +189,7 @@ public class Alien extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonActionPerformed
+    private void döljKnappActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_döljKnappActionPerformed
 
         if(showingPassword)
         {
@@ -201,7 +201,7 @@ public class Alien extends javax.swing.JFrame {
             showingPassword = true;
         }
 
-    }//GEN-LAST:event_jRadioButtonActionPerformed
+    }//GEN-LAST:event_döljKnappActionPerformed
 
     private void alienIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alienIDActionPerformed
         // TODO add your handling code here:
@@ -256,14 +256,14 @@ public class Alien extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField alienID;
     private javax.swing.JButton byta;
+    private javax.swing.JRadioButton döljKnapp;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton;
-    private javax.swing.JLabel lblTest1;
     private javax.swing.JButton loggaIn;
     private javax.swing.JPasswordField lösenord;
+    private javax.swing.JLabel textAnvändarnamn;
+    private javax.swing.JLabel textLösenord;
+    private javax.swing.JLabel titel;
     // End of variables declaration//GEN-END:variables
 }

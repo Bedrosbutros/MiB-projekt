@@ -36,12 +36,12 @@ public class StatistikKnapp extends javax.swing.JFrame {
         förstaDatum = new com.toedter.calendar.JDateChooser();
         andraDatum = new com.toedter.calendar.JDateChooser();
         ok = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
+        textKontorschef = new javax.swing.JLabel();
         kontorschef = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
+        textOmråde = new javax.swing.JLabel();
         område = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
+        textOmrådeschef = new javax.swing.JLabel();
         områdeschef = new javax.swing.JComboBox<>();
         jPanel1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -84,16 +84,16 @@ public class StatistikKnapp extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Futura", 0, 24)); // NOI18N
-        jLabel5.setText("Alien statistik");
+        titel.setFont(new java.awt.Font("Futura", 0, 24)); // NOI18N
+        titel.setText("Alien statistik");
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setText("Kontrorschef");
+        textKontorschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textKontorschef.setText("Kontrorschef");
 
         kontorschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel4.setText("Område");
+        textOmråde.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textOmråde.setText("Område");
 
         område.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         område.addActionListener(new java.awt.event.ActionListener() {
@@ -102,8 +102,8 @@ public class StatistikKnapp extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel3.setText("Områdeschef");
+        textOmrådeschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textOmrådeschef.setText("Områdeschef");
 
         områdeschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
@@ -149,9 +149,9 @@ public class StatistikKnapp extends javax.swing.JFrame {
                                 .addComponent(andraDatum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(kontorschef, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel3)
-                                .addComponent(jLabel4)
+                                .addComponent(textKontorschef)
+                                .addComponent(textOmrådeschef)
+                                .addComponent(textOmråde)
                                 .addComponent(område, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(områdeschef, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(info)
@@ -159,7 +159,7 @@ public class StatistikKnapp extends javax.swing.JFrame {
                         .addGap(31, 31, 31)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
+                        .addComponent(titel)
                         .addGap(106, 106, 106)))
                 .addGap(22, 22, 22))
         );
@@ -167,7 +167,7 @@ public class StatistikKnapp extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(jLabel5)
+                .addComponent(titel)
                 .addGap(36, 36, 36)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -184,15 +184,15 @@ public class StatistikKnapp extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ok)))
                 .addGap(17, 17, 17)
-                .addComponent(jLabel2)
+                .addComponent(textKontorschef)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(kontorschef, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(textOmråde)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(område, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
+                .addComponent(textOmrådeschef)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(områdeschef, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -215,8 +215,8 @@ public class StatistikKnapp extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void fyllInformation()
-    {
+    private void fyllInformation(){
+        
         sorteraEfter.addItem("Plats");
         sorteraEfter.addItem("Ras");
         sorteraEfter.addItem("Datum");
@@ -335,8 +335,7 @@ public class StatistikKnapp extends javax.swing.JFrame {
 
     }//GEN-LAST:event_områdeActionPerformed
 
-    private void väljAgent()
-    {
+    private void väljAgent(){
     
         String valdOmråde = område.getSelectedItem().toString();
         String väljOmrådeschef = "select Namn from Agent join Omradeschef O on Agent.Agent_ID = O.Agent_ID join Omrade O2 on O2.Omrades_ID = O.Omrade where Benamning='"+valdOmråde+"'";
@@ -359,8 +358,7 @@ public class StatistikKnapp extends javax.swing.JFrame {
         
     }
     
-    private void hämtaEfterRas()
-    {
+    private void hämtaEfterRas(){
         
         try {
             
@@ -389,8 +387,7 @@ public class StatistikKnapp extends javax.swing.JFrame {
         
     }
     
-    private void hämtaEfterPlats()
-    {
+    private void hämtaEfterPlats(){
         
         try {
             
@@ -412,8 +409,7 @@ public class StatistikKnapp extends javax.swing.JFrame {
         
     }
     
-    private void hämtaEfterDatum()
-    {
+    private void hämtaEfterDatum(){
         
         try {
             
@@ -437,15 +433,10 @@ public class StatistikKnapp extends javax.swing.JFrame {
         
     }
     
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.toedter.calendar.JDateChooser andraDatum;
     private com.toedter.calendar.JDateChooser förstaDatum;
     private javax.swing.JLabel info;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -457,5 +448,9 @@ public class StatistikKnapp extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> områdeschef;
     private javax.swing.JComboBox<String> rasPlats;
     private javax.swing.JComboBox<String> sorteraEfter;
+    private javax.swing.JLabel textKontorschef;
+    private javax.swing.JLabel textOmråde;
+    private javax.swing.JLabel textOmrådeschef;
+    private javax.swing.JLabel titel;
     // End of variables declaration//GEN-END:variables
 }

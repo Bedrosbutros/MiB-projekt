@@ -29,10 +29,10 @@ public class AgentStatistik extends javax.swing.JFrame {
         lista = new javax.swing.JList<>();
         områden = new javax.swing.JComboBox<>();
         områdeschef = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        textOmrådeschef = new javax.swing.JLabel();
+        textValdOmråde = new javax.swing.JLabel();
         topTre = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -60,11 +60,11 @@ public class AgentStatistik extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setText("Områdeschef");
+        textOmrådeschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textOmrådeschef.setText("Områdeschef");
 
-        jLabel3.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel3.setText("Välj ett område");
+        textValdOmråde.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textValdOmråde.setText("Välj ett område");
 
         topTre.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         topTre.setText("Top 3");
@@ -74,8 +74,8 @@ public class AgentStatistik extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
-        jLabel4.setText("Agent Statistik");
+        titel.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
+        titel.setText("Agent Statistik");
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -113,8 +113,8 @@ public class AgentStatistik extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(områden, 0, 131, Short.MAX_VALUE)
                                         .addComponent(områdeschef))
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel3))
+                                    .addComponent(textOmrådeschef)
+                                    .addComponent(textValdOmråde))
                                 .addGap(18, 18, 18))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(topTre)
@@ -122,25 +122,25 @@ public class AgentStatistik extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
+                        .addComponent(titel)
                         .addGap(51, 51, 51))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(jLabel4)
+                .addComponent(titel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(34, 34, 34))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                        .addComponent(textValdOmråde)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(områden, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel2)
+                        .addComponent(textOmrådeschef)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(områdeschef, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -163,8 +163,8 @@ public class AgentStatistik extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void fyllInformation()
-    {
+    private void fyllInformation(){
+        
         områdeschef.setEnabled(false);
         
         try
@@ -196,8 +196,7 @@ public class AgentStatistik extends javax.swing.JFrame {
         
     }
     
-    private void hittaOmrådeschef()
-    {
+    private void hittaOmrådeschef(){
         
         try
         {
@@ -265,9 +264,6 @@ public class AgentStatistik extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -275,6 +271,9 @@ public class AgentStatistik extends javax.swing.JFrame {
     private javax.swing.JList<String> lista;
     private javax.swing.JComboBox<String> områden;
     private javax.swing.JTextField områdeschef;
+    private javax.swing.JLabel textOmrådeschef;
+    private javax.swing.JLabel textValdOmråde;
+    private javax.swing.JLabel titel;
     private javax.swing.JButton topTre;
     // End of variables declaration//GEN-END:variables
 }

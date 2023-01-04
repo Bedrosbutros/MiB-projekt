@@ -35,8 +35,8 @@ public class HanteraUtrustning extends javax.swing.JFrame {
         läggTillUtrustning = new javax.swing.JButton();
         taBort = new javax.swing.JButton();
         egenskap = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        textUtrustningsnamn = new javax.swing.JLabel();
+        textUtrustningstyp = new javax.swing.JLabel();
         egenskapText = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -86,13 +86,13 @@ public class HanteraUtrustning extends javax.swing.JFrame {
 
         egenskap.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("Utrustningsnamn");
+        textUtrustningsnamn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textUtrustningsnamn.setForeground(new java.awt.Color(51, 51, 51));
+        textUtrustningsnamn.setText("Utrustningsnamn");
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("Utrustningstyp");
+        textUtrustningstyp.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textUtrustningstyp.setForeground(new java.awt.Color(51, 51, 51));
+        textUtrustningstyp.setText("Utrustningstyp");
 
         egenskapText.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         egenskapText.setForeground(new java.awt.Color(51, 51, 51));
@@ -136,8 +136,8 @@ public class HanteraUtrustning extends javax.swing.JFrame {
                         .addComponent(info)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(utrustningNamn, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
+                            .addComponent(textUtrustningsnamn)
+                            .addComponent(textUtrustningstyp)
                             .addComponent(egenskapText)
                             .addComponent(utrustningTyp, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(egenskap, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -149,11 +149,11 @@ public class HanteraUtrustning extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addComponent(info)
                 .addGap(16, 16, 16)
-                .addComponent(jLabel1)
+                .addComponent(textUtrustningsnamn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(utrustningNamn, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(textUtrustningstyp)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(utrustningTyp, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -271,8 +271,7 @@ public class HanteraUtrustning extends javax.swing.JFrame {
         }
     }
     
-    private void fyllUtrusning()
-    {
+    private void fyllUtrusning(){
         try
         {
             String hämtaUtrusning = "select Benamning from Utrustning";
@@ -368,8 +367,8 @@ public class HanteraUtrustning extends javax.swing.JFrame {
         
     }//GEN-LAST:event_taBortActionPerformed
 
-    private void hittaKaliber()
-    {
+    private void hittaKaliber(){
+        
         String benämning = utrustningNamn.getSelectedItem().toString();
         String hittaID= "select Utrustnings_ID from Utrustning where Benamning='"+benämning+"'";
         
@@ -396,8 +395,7 @@ public class HanteraUtrustning extends javax.swing.JFrame {
         
     }
     
-    private void hittaKraftkälla()
-    {
+    private void hittaKraftkälla(){
         
         String benämning = utrustningNamn.getSelectedItem().toString();
         String hittaID= "select Utrustnings_ID from Utrustning where Benamning='"+benämning+"'";
@@ -425,8 +423,7 @@ public class HanteraUtrustning extends javax.swing.JFrame {
         
     }
     
-    private void hittaÖverförningsteknik()
-    {
+    private void hittaÖverförningsteknik(){
         
         String benämning = utrustningNamn.getSelectedItem().toString();
         String hittaID= "select Utrustnings_ID from Utrustning where Benamning='"+benämning+"'";
@@ -458,14 +455,14 @@ public class HanteraUtrustning extends javax.swing.JFrame {
     private javax.swing.JTextField egenskap;
     private javax.swing.JLabel egenskapText;
     private javax.swing.JLabel info;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton läggTillUtrustning;
     private javax.swing.JButton taBort;
+    private javax.swing.JLabel textUtrustningsnamn;
+    private javax.swing.JLabel textUtrustningstyp;
     private javax.swing.JComboBox<String> utrustningNamn;
     private javax.swing.JComboBox<String> utrustningTyp;
     // End of variables declaration//GEN-END:variables

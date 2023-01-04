@@ -25,8 +25,8 @@ public class MittKontoAlien extends javax.swing.JFrame {
         MittKontoAlien.this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
-    private void start()
-    {
+    private void start(){
+        
         namn.setEnabled(false);
         telefon.setEnabled(false);
         plats.setEnabled(false);
@@ -36,8 +36,7 @@ public class MittKontoAlien extends javax.swing.JFrame {
         hämtaRas();
     }
      
-    private void hämtaRas()
-    {
+    private void hämtaRas(){
         
         try {
             
@@ -82,8 +81,8 @@ public class MittKontoAlien extends javax.swing.JFrame {
         }
     }
     
-    private void fyllPlats()
-    {
+    private void fyllPlats(){
+        
         try
         {
             String fråga = "select Benamning from Plats";
@@ -107,8 +106,8 @@ public class MittKontoAlien extends javax.swing.JFrame {
         
     }
     
-    private void hämtaInfo()
-    {
+    private void hämtaInfo(){
+        
         String hämtaNamn= "select Namn from Alien where Alien_ID="+ID;
         String hämtaTelefon= "select Telefon from Alien where Alien_ID="+ID;
         String hämtaDatum ="select Registreringsdatum from Alien where Alien_ID="+ID;
@@ -142,47 +141,47 @@ public class MittKontoAlien extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        textNamn = new javax.swing.JLabel();
+        textTelefon = new javax.swing.JLabel();
+        textRegistreringsdatum = new javax.swing.JLabel();
+        textPlats = new javax.swing.JLabel();
+        textAgent = new javax.swing.JLabel();
         namn = new javax.swing.JTextField();
         telefon = new javax.swing.JTextField();
         datum = new com.toedter.calendar.JDateChooser();
-        jLabel7 = new javax.swing.JLabel();
+        textRas = new javax.swing.JLabel();
         ras = new javax.swing.JTextField();
         plats = new javax.swing.JTextField();
         agent = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         ändraLösenord = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("Namn");
+        textNamn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textNamn.setForeground(new java.awt.Color(51, 51, 51));
+        textNamn.setText("Namn");
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("Telefon");
+        textTelefon.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textTelefon.setForeground(new java.awt.Color(51, 51, 51));
+        textTelefon.setText("Telefon");
 
-        jLabel3.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("Registreringsdatum");
+        textRegistreringsdatum.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textRegistreringsdatum.setForeground(new java.awt.Color(51, 51, 51));
+        textRegistreringsdatum.setText("Registreringsdatum");
 
-        jLabel5.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel5.setText("Plats");
+        textPlats.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textPlats.setForeground(new java.awt.Color(51, 51, 51));
+        textPlats.setText("Plats");
 
-        jLabel6.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Agent");
+        textAgent.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textAgent.setForeground(new java.awt.Color(51, 51, 51));
+        textAgent.setText("Agent");
 
         namn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         namn.addActionListener(new java.awt.event.ActionListener() {
@@ -195,9 +194,9 @@ public class MittKontoAlien extends javax.swing.JFrame {
 
         datum.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel7.setText("Ras");
+        textRas.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textRas.setForeground(new java.awt.Color(51, 51, 51));
+        textRas.setText("Ras");
 
         ras.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         ras.addActionListener(new java.awt.event.ActionListener() {
@@ -254,9 +253,9 @@ public class MittKontoAlien extends javax.swing.JFrame {
                 .addGap(55, 55, 55))
         );
 
-        jLabel8.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel8.setText("Mitt konto");
+        titel.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
+        titel.setForeground(new java.awt.Color(51, 51, 51));
+        titel.setText("Mitt konto");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -268,12 +267,12 @@ public class MittKontoAlien extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
+                            .addComponent(textRas)
+                            .addComponent(textRegistreringsdatum)
+                            .addComponent(textPlats)
+                            .addComponent(textAgent)
+                            .addComponent(textTelefon)
+                            .addComponent(textNamn))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -287,7 +286,7 @@ public class MittKontoAlien extends javax.swing.JFrame {
                         .addGap(24, 24, 24))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel8)
+                        .addComponent(titel)
                         .addGap(96, 96, 96))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -295,19 +294,19 @@ public class MittKontoAlien extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(jLabel8)
+                .addComponent(titel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(namn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(textNamn))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(telefon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(textTelefon))
                 .addGap(9, 9, 9)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(datum, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textRegistreringsdatum, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -317,11 +316,11 @@ public class MittKontoAlien extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(textPlats, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(textAgent, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jLabel7)))
+                        .addComponent(textRas)))
                 .addGap(125, 125, 125))
         );
 
@@ -347,19 +346,19 @@ public class MittKontoAlien extends javax.swing.JFrame {
     }//GEN-LAST:event_ändraLösenordActionPerformed
 
     private void namnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namnActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_namnActionPerformed
 
     private void rasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rasActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_rasActionPerformed
 
     private void platsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_platsActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_platsActionPerformed
 
     private void agentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agentActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_agentActionPerformed
 
 
@@ -367,13 +366,6 @@ public class MittKontoAlien extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField agent;
     private com.toedter.calendar.JDateChooser datum;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -381,6 +373,13 @@ public class MittKontoAlien extends javax.swing.JFrame {
     private javax.swing.JTextField plats;
     private javax.swing.JTextField ras;
     private javax.swing.JTextField telefon;
+    private javax.swing.JLabel textAgent;
+    private javax.swing.JLabel textNamn;
+    private javax.swing.JLabel textPlats;
+    private javax.swing.JLabel textRas;
+    private javax.swing.JLabel textRegistreringsdatum;
+    private javax.swing.JLabel textTelefon;
+    private javax.swing.JLabel titel;
     private javax.swing.JButton ändraLösenord;
     // End of variables declaration//GEN-END:variables
 }

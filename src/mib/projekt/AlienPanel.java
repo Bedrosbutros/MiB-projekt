@@ -19,8 +19,8 @@ public class AlienPanel extends javax.swing.JFrame {
         hej();
     }
     
-    private void hej()
-    {
+    private void hej(){
+        
         try
         {
             
@@ -43,7 +43,6 @@ public class AlienPanel extends javax.swing.JFrame {
         }
     }
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -51,7 +50,7 @@ public class AlienPanel extends javax.swing.JFrame {
         hej = new javax.swing.JLabel();
         loggaUt = new javax.swing.JButton();
         mittKonto = new javax.swing.JButton();
-        mittKonto1 = new javax.swing.JButton();
+        mittOmråde = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -81,12 +80,12 @@ public class AlienPanel extends javax.swing.JFrame {
             }
         });
 
-        mittKonto1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        mittKonto1.setForeground(new java.awt.Color(51, 51, 51));
-        mittKonto1.setText("Mitt område");
-        mittKonto1.addActionListener(new java.awt.event.ActionListener() {
+        mittOmråde.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        mittOmråde.setForeground(new java.awt.Color(51, 51, 51));
+        mittOmråde.setText("Mitt område");
+        mittOmråde.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mittKonto1ActionPerformed(evt);
+                mittOmrådeActionPerformed(evt);
             }
         });
 
@@ -103,7 +102,7 @@ public class AlienPanel extends javax.swing.JFrame {
                         .addGap(33, 33, 33)
                         .addComponent(mittKonto, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(mittKonto1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(mittOmråde, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(124, 124, 124)
                         .addComponent(loggaUt, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -117,7 +116,7 @@ public class AlienPanel extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(mittKonto, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mittKonto1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(mittOmråde, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addComponent(loggaUt, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(26, Short.MAX_VALUE))
@@ -150,11 +149,11 @@ public class AlienPanel extends javax.swing.JFrame {
 
     }//GEN-LAST:event_loggaUtActionPerformed
 
-    private void mittKonto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mittKonto1ActionPerformed
+    private void mittOmrådeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mittOmrådeActionPerformed
         
         new MittOmråde(idb,ID).setVisible(true);
         
-    }//GEN-LAST:event_mittKonto1ActionPerformed
+    }//GEN-LAST:event_mittOmrådeActionPerformed
 
     
 
@@ -163,6 +162,6 @@ public class AlienPanel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton loggaUt;
     private javax.swing.JButton mittKonto;
-    private javax.swing.JButton mittKonto1;
+    private javax.swing.JButton mittOmråde;
     // End of variables declaration//GEN-END:variables
 }

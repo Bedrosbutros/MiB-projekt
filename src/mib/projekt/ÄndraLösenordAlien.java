@@ -26,14 +26,14 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        textNuvarandeLösenord = new javax.swing.JLabel();
+        textNyLösenord = new javax.swing.JLabel();
         instruktion = new javax.swing.JLabel();
         nuvarandeLösenord = new javax.swing.JPasswordField();
         nyLösenord = new javax.swing.JPasswordField();
         sparaÄndringar = new javax.swing.JButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        döljLösenord1 = new javax.swing.JRadioButton();
+        döljLösenord2 = new javax.swing.JRadioButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -42,11 +42,11 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel1.setText("Nuvarande Lösenord");
+        textNuvarandeLösenord.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textNuvarandeLösenord.setText("Nuvarande Lösenord");
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setText("Ny Lösenord");
+        textNyLösenord.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textNyLösenord.setText("Ny Lösenord");
 
         instruktion.setFont(new java.awt.Font("Futura", 0, 24)); // NOI18N
         instruktion.setText("Ändra Lösenord");
@@ -70,15 +70,15 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
             }
         });
 
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        döljLösenord1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                döljLösenord1ActionPerformed(evt);
             }
         });
 
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        döljLösenord2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                döljLösenord2ActionPerformed(evt);
             }
         });
 
@@ -117,16 +117,16 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
+                                    .addComponent(textNyLösenord)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(nuvarandeLösenord, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton1))
-                                    .addComponent(jLabel1)
+                                        .addComponent(döljLösenord1))
+                                    .addComponent(textNuvarandeLösenord)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(nyLösenord, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton2)))))
+                                        .addComponent(döljLösenord2)))))
                         .addGap(38, 38, 38))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(instruktion)
@@ -138,17 +138,17 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
                 .addGap(38, 38, 38)
                 .addComponent(instruktion)
                 .addGap(28, 28, 28)
-                .addComponent(jLabel1)
+                .addComponent(textNuvarandeLösenord)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(nuvarandeLösenord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(döljLösenord1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
+                .addComponent(textNyLösenord)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(nyLösenord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(döljLösenord2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addComponent(sparaÄndringar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31))
@@ -243,7 +243,7 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
         
     }//GEN-LAST:event_sparaÄndringarActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void döljLösenord1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_döljLösenord1ActionPerformed
         
         if(showingPassword)
         {
@@ -255,9 +255,9 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
             showingPassword = true;
         }
         
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_döljLösenord1ActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void döljLösenord2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_döljLösenord2ActionPerformed
         
         if(showingPassword)
         {
@@ -269,21 +269,21 @@ public class ÄndraLösenordAlien extends javax.swing.JFrame {
             showingPassword = true;
         }
         
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_döljLösenord2ActionPerformed
 
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton döljLösenord1;
+    private javax.swing.JRadioButton döljLösenord2;
     private javax.swing.JLabel instruktion;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JPasswordField nuvarandeLösenord;
     private javax.swing.JPasswordField nyLösenord;
     private javax.swing.JButton sparaÄndringar;
+    private javax.swing.JLabel textNuvarandeLösenord;
+    private javax.swing.JLabel textNyLösenord;
     // End of variables declaration//GEN-END:variables
 }

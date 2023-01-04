@@ -39,21 +39,21 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         lösenord = new javax.swing.JPasswordField();
         område = new javax.swing.JComboBox<>();
         agenter = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
         spara = new javax.swing.JButton();
         döljaLösenord = new javax.swing.JRadioButton();
         ras = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        textAlienID = new javax.swing.JLabel();
+        textNamn = new javax.swing.JLabel();
+        textTelefon = new javax.swing.JLabel();
+        textRegistreringsdatum = new javax.swing.JLabel();
+        textLösenord = new javax.swing.JLabel();
+        textPlats = new javax.swing.JLabel();
+        textAgent = new javax.swing.JLabel();
+        textRas = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -83,9 +83,9 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
         agenter.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("Registrerade Aliens");
+        titel.setFont(new java.awt.Font("Futura", 0, 24)); // NOI18N
+        titel.setForeground(new java.awt.Color(51, 51, 51));
+        titel.setText("Registrerade Aliens");
 
         spara.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         spara.setForeground(new java.awt.Color(51, 51, 51));
@@ -132,37 +132,37 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("Alien ID");
+        textAlienID.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textAlienID.setForeground(new java.awt.Color(51, 51, 51));
+        textAlienID.setText("Alien ID");
 
-        jLabel3.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("Namn");
+        textNamn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textNamn.setForeground(new java.awt.Color(51, 51, 51));
+        textNamn.setText("Namn");
 
-        jLabel4.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("Telefon");
+        textTelefon.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textTelefon.setForeground(new java.awt.Color(51, 51, 51));
+        textTelefon.setText("Telefon");
 
-        jLabel5.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel5.setText("Registreringsdatum");
+        textRegistreringsdatum.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textRegistreringsdatum.setForeground(new java.awt.Color(51, 51, 51));
+        textRegistreringsdatum.setText("Registreringsdatum");
 
-        jLabel6.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Lösenord");
+        textLösenord.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textLösenord.setForeground(new java.awt.Color(51, 51, 51));
+        textLösenord.setText("Lösenord");
 
-        jLabel7.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel7.setText("Plats");
+        textPlats.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textPlats.setForeground(new java.awt.Color(51, 51, 51));
+        textPlats.setText("Plats");
 
-        jLabel8.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel8.setText("Agent");
+        textAgent.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textAgent.setForeground(new java.awt.Color(51, 51, 51));
+        textAgent.setText("Agent");
 
-        jLabel11.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel11.setText("Ras");
+        textRas.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textRas.setForeground(new java.awt.Color(51, 51, 51));
+        textRas.setText("Ras");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -179,18 +179,18 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel6)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jLabel3)
-                                            .addComponent(jLabel4)
-                                            .addComponent(jLabel5))
+                                            .addComponent(textLösenord)
+                                            .addComponent(textAlienID)
+                                            .addComponent(textNamn)
+                                            .addComponent(textTelefon)
+                                            .addComponent(textRegistreringsdatum))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                                         .addComponent(döljaLösenord))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel7)
-                                            .addComponent(jLabel8)
-                                            .addComponent(jLabel11))
+                                            .addComponent(textPlats)
+                                            .addComponent(textAgent)
+                                            .addComponent(textRas))
                                         .addGap(0, 0, Short.MAX_VALUE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -204,7 +204,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                                     .addComponent(ras, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(31, 31, 31))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(titel)
                         .addGap(80, 80, 80))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -213,42 +213,42 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addComponent(jLabel1)
+                        .addComponent(titel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(alienID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
+                            .addComponent(textAlienID))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(namn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
+                            .addComponent(textNamn))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(telefon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4))
+                            .addComponent(textTelefon))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(datum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5))
+                            .addComponent(textRegistreringsdatum))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lösenord)
                             .addComponent(döljaLösenord, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel6)))
+                        .addComponent(textLösenord)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(område, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
+                    .addComponent(textPlats))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(agenter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
+                    .addComponent(textAgent))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11))
+                    .addComponent(textRas))
                 .addGap(34, 34, 34)
                 .addComponent(spara)
                 .addGap(21, 21, 21))
@@ -269,8 +269,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void fyllListor()
-    {
+    private void fyllListor(){
         
         String hämtaPlats = "Select Benamning from Plats";
         String hämtaAgent= "Select Namn from Agent";
@@ -313,7 +312,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     
     
     private void namnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namnActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_namnActionPerformed
 
     private void kontrolleraText(){
@@ -375,9 +374,9 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         
     if (Validering.endastNummerTillåten(telefon)){
     if (Validering.lösenordetÄrLång(lösenord)){
-    if (Validering.rutanÄrTom(namn, jLabel3)){    
-    if (Validering.rutanÄrTom(telefon, jLabel4)){   
-    if (Validering.rutanÄrTom(lösenord, jLabel6)){    
+    if (Validering.rutanÄrTom(namn, textNamn)){    
+    if (Validering.rutanÄrTom(telefon, textTelefon)){   
+    if (Validering.rutanÄrTom(lösenord, textLösenord)){    
     
         try {
             
@@ -421,13 +420,13 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         catch (Exception ettUndantag) {
             JOptionPane.showMessageDialog(null, "Något gick fel!");
             System.out.println("Internt felmeddelande" + ettUndantag.getMessage());
+            
+                            }
+                        }
+                    }
+                }
+            }
         }
-        
-    }
-    }
-    }
-    }
-    }
     }//GEN-LAST:event_sparaActionPerformed
 
     private void döljaLösenordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_döljaLösenordActionPerformed
@@ -445,7 +444,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     }//GEN-LAST:event_döljaLösenordActionPerformed
 
     private void alienIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alienIDActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_alienIDActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -453,16 +452,7 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private javax.swing.JTextField alienID;
     private com.toedter.calendar.JDateChooser datum;
     private javax.swing.JRadioButton döljaLösenord;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -472,5 +462,14 @@ private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private javax.swing.JComboBox<String> ras;
     private javax.swing.JButton spara;
     private javax.swing.JTextField telefon;
+    private javax.swing.JLabel textAgent;
+    private javax.swing.JLabel textAlienID;
+    private javax.swing.JLabel textLösenord;
+    private javax.swing.JLabel textNamn;
+    private javax.swing.JLabel textPlats;
+    private javax.swing.JLabel textRas;
+    private javax.swing.JLabel textRegistreringsdatum;
+    private javax.swing.JLabel textTelefon;
+    private javax.swing.JLabel titel;
     // End of variables declaration//GEN-END:variables
 }

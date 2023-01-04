@@ -167,16 +167,16 @@ public class MittKonto extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        textNamn = new javax.swing.JLabel();
         namn = new javax.swing.JTextField();
         telefon = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        textTelefon = new javax.swing.JLabel();
+        textAdmin = new javax.swing.JLabel();
         administratör = new javax.swing.JComboBox<>();
         datum = new com.toedter.calendar.JDateChooser();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        textAnställningsdatum = new javax.swing.JLabel();
+        textOmråde = new javax.swing.JLabel();
+        textUtrustning = new javax.swing.JLabel();
         utrustning = new javax.swing.JComboBox<>();
         område = new javax.swing.JComboBox<>();
         redigera = new javax.swing.JButton();
@@ -184,7 +184,7 @@ public class MittKonto extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         ändraLösenord = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -204,38 +204,38 @@ public class MittKonto extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("Namn");
+        textNamn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textNamn.setForeground(new java.awt.Color(51, 51, 51));
+        textNamn.setText("Namn");
 
         namn.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
         telefon.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("Telefon");
+        textTelefon.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textTelefon.setForeground(new java.awt.Color(51, 51, 51));
+        textTelefon.setText("Telefon");
 
-        jLabel4.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("Administratör?");
+        textAdmin.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textAdmin.setForeground(new java.awt.Color(51, 51, 51));
+        textAdmin.setText("Administratör?");
 
         administratör.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
         datum.setDateFormatString("yyyy-MM-dd");
         datum.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("Anställningsdatum");
+        textAnställningsdatum.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textAnställningsdatum.setForeground(new java.awt.Color(51, 51, 51));
+        textAnställningsdatum.setText("Anställningsdatum");
 
-        jLabel5.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel5.setText("Område");
+        textOmråde.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textOmråde.setForeground(new java.awt.Color(51, 51, 51));
+        textOmråde.setText("Område");
 
-        jLabel6.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Utrustning");
+        textUtrustning.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textUtrustning.setForeground(new java.awt.Color(51, 51, 51));
+        textUtrustning.setText("Utrustning");
 
         utrustning.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         utrustning.addActionListener(new java.awt.event.ActionListener() {
@@ -306,9 +306,9 @@ public class MittKonto extends javax.swing.JFrame {
                 .addGap(54, 54, 54))
         );
 
-        jLabel7.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel7.setText("Mitt konto");
+        titel.setFont(new java.awt.Font("Futura", 0, 36)); // NOI18N
+        titel.setForeground(new java.awt.Color(51, 51, 51));
+        titel.setText("Mitt konto");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -319,18 +319,18 @@ public class MittKonto extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
+                        .addComponent(titel)
                         .addGap(91, 91, 91))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel2))
+                                    .addComponent(textNamn)
+                                    .addComponent(textOmråde)
+                                    .addComponent(textUtrustning)
+                                    .addComponent(textAnställningsdatum)
+                                    .addComponent(textAdmin)
+                                    .addComponent(textTelefon))
                                 .addGap(59, 59, 59)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -348,30 +348,30 @@ public class MittKonto extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addComponent(jLabel7)
+                .addComponent(titel)
                 .addGap(49, 49, 49)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
+                    .addComponent(textNamn)
                     .addComponent(namn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(telefon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(textTelefon))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(textAdmin)
                     .addComponent(administratör))
                 .addGap(7, 7, 7)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(datum, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textAnställningsdatum, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textOmråde, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(område))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textUtrustning, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(utrustning, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addComponent(redigera, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -403,8 +403,8 @@ public class MittKonto extends javax.swing.JFrame {
     private void sparaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sparaActionPerformed
 
         if (Validering.endastNummerTillåten(telefon)){
-        if (Validering.rutanÄrTom(namn, jLabel1)){
-        if (Validering.rutanÄrTom(telefon, jLabel2)){    
+        if (Validering.rutanÄrTom(namn, textNamn)){
+        if (Validering.rutanÄrTom(telefon, textTelefon)){    
         
         int resultat = JOptionPane.showConfirmDialog(null, "Är du säker att du vill ändra?", "Bekräfta uppgifter", JOptionPane.YES_NO_OPTION);
 
@@ -444,12 +444,11 @@ public class MittKonto extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Något gick fel!");
                 System.out.println("Internt felmeddelande" + ettUndantag.getMessage());
 
+                        }
+                    }
+                }
             }
         }
-        
-    }
-    }
-    }
     }//GEN-LAST:event_sparaActionPerformed
 
     private void redigeraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_redigeraActionPerformed
@@ -503,13 +502,6 @@ public class MittKonto extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> administratör;
     private com.toedter.calendar.JDateChooser datum;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
@@ -520,6 +512,13 @@ public class MittKonto extends javax.swing.JFrame {
     private javax.swing.JButton redigera;
     private javax.swing.JButton spara;
     private javax.swing.JTextField telefon;
+    private javax.swing.JLabel textAdmin;
+    private javax.swing.JLabel textAnställningsdatum;
+    private javax.swing.JLabel textNamn;
+    private javax.swing.JLabel textOmråde;
+    private javax.swing.JLabel textTelefon;
+    private javax.swing.JLabel textUtrustning;
+    private javax.swing.JLabel titel;
     private javax.swing.JComboBox<String> utrustning;
     private javax.swing.JButton ändraLösenord;
     // End of variables declaration//GEN-END:variables

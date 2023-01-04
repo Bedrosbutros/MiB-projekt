@@ -19,8 +19,8 @@ public class AgentPanel extends javax.swing.JFrame {
         hej();
     }
     
-    private void hej()
-    {
+    private void hej(){
+        
         try
         {
             
@@ -54,7 +54,7 @@ public class AgentPanel extends javax.swing.JFrame {
         hanteraAliens = new javax.swing.JButton();
         registreraAlien = new javax.swing.JButton();
         hanteraUtrustning = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        statistik = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -111,12 +111,12 @@ public class AgentPanel extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(51, 51, 51));
-        jButton1.setText("Statistik");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        statistik.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        statistik.setForeground(new java.awt.Color(51, 51, 51));
+        statistik.setText("Statistik");
+        statistik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                statistikActionPerformed(evt);
             }
         });
 
@@ -138,7 +138,7 @@ public class AgentPanel extends javax.swing.JFrame {
                                 .addComponent(hanteraUtrustning, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(statistik, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(hanteraAliens, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
                                 .addGap(18, 18, 18)
                                 .addComponent(registreraAlien, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -161,7 +161,7 @@ public class AgentPanel extends javax.swing.JFrame {
                     .addComponent(hanteraAliens, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(registreraAlien, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(statistik, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(loggaUt, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(26, Short.MAX_VALUE))
@@ -212,11 +212,11 @@ public class AgentPanel extends javax.swing.JFrame {
 
     }//GEN-LAST:event_loggaUtActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void statistikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statistikActionPerformed
         
         new StatistikKnapp(idb,ID).setVisible(true);
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_statistikActionPerformed
 
     
 
@@ -224,10 +224,10 @@ public class AgentPanel extends javax.swing.JFrame {
     private javax.swing.JButton hanteraAliens;
     private javax.swing.JButton hanteraUtrustning;
     private javax.swing.JLabel hej;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton loggaUt;
     private javax.swing.JButton mittKonto;
     private javax.swing.JButton registreraAlien;
+    private javax.swing.JButton statistik;
     // End of variables declaration//GEN-END:variables
 }

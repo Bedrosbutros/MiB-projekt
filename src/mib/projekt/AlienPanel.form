@@ -57,7 +57,7 @@
                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                           <Component id="mittKonto" min="-2" pref="138" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="mittKonto1" min="-2" pref="138" max="-2" attributes="0"/>
+                          <Component id="mittOmråde" min="-2" pref="138" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
@@ -76,7 +76,7 @@
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="mittKonto" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
-                      <Component id="mittKonto1" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="mittOmråde" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Component id="loggaUt" min="-2" pref="38" max="-2" attributes="0"/>
@@ -125,7 +125,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mittKontoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="mittKonto1">
+        <Component class="javax.swing.JButton" name="mittOmr&#xe5;de">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Futura" size="14" style="0"/>
@@ -136,7 +136,7 @@
             <Property name="text" type="java.lang.String" value="Mitt omr&#xe5;de"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mittKonto1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mittOmr&#xe5;deActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

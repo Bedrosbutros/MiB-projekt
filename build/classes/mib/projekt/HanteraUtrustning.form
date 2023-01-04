@@ -66,8 +66,8 @@
                           <Component id="info" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="utrustningNamn" max="32767" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="textUtrustningsnamn" min="-2" max="-2" attributes="0"/>
+                              <Component id="textUtrustningstyp" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="egenskapText" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="utrustningTyp" alignment="0" max="32767" attributes="0"/>
                               <Component id="egenskap" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
@@ -84,11 +84,11 @@
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Component id="info" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="textUtrustningsnamn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="utrustningNamn" min="-2" pref="34" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="textUtrustningstyp" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="utrustningTyp" min="-2" pref="34" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -184,7 +184,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="textUtrustningsnamn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Futura" size="14" style="0"/>
@@ -195,7 +195,7 @@
             <Property name="text" type="java.lang.String" value="Utrustningsnamn"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="textUtrustningstyp">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Futura" size="14" style="0"/>

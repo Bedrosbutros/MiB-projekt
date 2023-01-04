@@ -19,7 +19,7 @@ public class Meny extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         alien = new javax.swing.JButton();
         agent = new javax.swing.JButton();
-        lblApplikationsNamn = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -46,9 +46,9 @@ public class Meny extends javax.swing.JFrame {
             }
         });
 
-        lblApplikationsNamn.setFont(new java.awt.Font("Futura", 0, 20)); // NOI18N
-        lblApplikationsNamn.setForeground(new java.awt.Color(51, 51, 51));
-        lblApplikationsNamn.setText("Men In Black Databas");
+        titel.setFont(new java.awt.Font("Futura", 0, 20)); // NOI18N
+        titel.setForeground(new java.awt.Color(51, 51, 51));
+        titel.setText("Men In Black Databas");
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -80,7 +80,7 @@ public class Meny extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(lblApplikationsNamn, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(titel, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(45, 45, 45))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -93,7 +93,7 @@ public class Meny extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(44, 44, 44)
-                .addComponent(lblApplikationsNamn)
+                .addComponent(titel)
                 .addGap(34, 34, 34)
                 .addComponent(agent, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -137,6 +137,6 @@ public class Meny extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel lblApplikationsNamn;
+    private javax.swing.JLabel titel;
     // End of variables declaration//GEN-END:variables
 }

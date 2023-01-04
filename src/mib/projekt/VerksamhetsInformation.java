@@ -30,14 +30,14 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         områdeschef = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
+        textOmrådeschef = new javax.swing.JLabel();
         kontorschef = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        textKontorschef = new javax.swing.JLabel();
+        titel = new javax.swing.JLabel();
         ändra = new javax.swing.JButton();
         spara = new javax.swing.JButton();
         område = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
+        textOmråde = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -48,19 +48,19 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
 
         områdeschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("Områdeschef");
+        textOmrådeschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textOmrådeschef.setForeground(new java.awt.Color(51, 51, 51));
+        textOmrådeschef.setText("Områdeschef");
 
         kontorschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("Kontrorschef");
+        textKontorschef.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textKontorschef.setForeground(new java.awt.Color(51, 51, 51));
+        textKontorschef.setText("Kontrorschef");
 
-        jLabel1.setFont(new java.awt.Font("Futura", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("Verksamhetsinformation");
+        titel.setFont(new java.awt.Font("Futura", 0, 18)); // NOI18N
+        titel.setForeground(new java.awt.Color(51, 51, 51));
+        titel.setText("Verksamhetsinformation");
 
         ändra.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
         ändra.setForeground(new java.awt.Color(51, 51, 51));
@@ -87,9 +87,9 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("Område");
+        textOmråde.setFont(new java.awt.Font("Futura", 0, 14)); // NOI18N
+        textOmråde.setForeground(new java.awt.Color(51, 51, 51));
+        textOmråde.setText("Område");
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -122,13 +122,13 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
+                            .addComponent(textKontorschef)
                             .addComponent(kontorschef, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(områdeschef, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3)
+                            .addComponent(textOmrådeschef)
                             .addComponent(område, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel1))
+                            .addComponent(textOmråde)
+                            .addComponent(titel))
                         .addGap(32, 32, 32))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(75, 75, 75)
@@ -141,17 +141,17 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel1)
+                .addComponent(titel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addComponent(jLabel2)
+                .addComponent(textKontorschef)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(kontorschef, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(textOmråde)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(område, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
+                .addComponent(textOmrådeschef)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(områdeschef, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -234,8 +234,7 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
          
     }//GEN-LAST:event_sparaActionPerformed
 
-    private void fyllListor()
-    {
+    private void fyllListor(){
         
         String hämtaNamn = "SELECT Namn from Agent";
         String hämtaOmråde = "Select Benamning from Omrade";
@@ -269,8 +268,7 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
         
     }
     
-    private void väljAgent()
-    {
+    private void väljAgent(){
     
         String valdOmråde = område.getSelectedItem().toString();
         String väljOmrådeschef = "select Namn from Agent join Omradeschef O on Agent.Agent_ID = O.Agent_ID join Omrade O2 on O2.Omrades_ID = O.Omrade where Benamning='"+valdOmråde+"'";
@@ -294,10 +292,6 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -305,6 +299,10 @@ public class VerksamhetsInformation extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> område;
     private javax.swing.JComboBox<String> områdeschef;
     private javax.swing.JButton spara;
+    private javax.swing.JLabel textKontorschef;
+    private javax.swing.JLabel textOmråde;
+    private javax.swing.JLabel textOmrådeschef;
+    private javax.swing.JLabel titel;
     private javax.swing.JButton ändra;
     // End of variables declaration//GEN-END:variables
 }
